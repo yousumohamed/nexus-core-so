@@ -1,0 +1,5 @@
+name: nexus_core_so
+description: Lightweight state core
+version: 1.0.0
+environment:
+  sdk: '>=2.17.0 <4.0.0'
