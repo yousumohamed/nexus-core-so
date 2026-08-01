@@ -1,6 +1,15 @@
+# Changelog
 
-- feat: introduce generic state container class (Version 1.0.1)
-- chore: update pubspec SDK target boundaries (Version 1.0.2)
-- docs: provide usage examples for mobile apps (Version 1.0.3)
-- fix: avoid unhandled null states in state updater (Version 1.0.4)
-- refactor: optimize internal listener dispatch (Version 1.0.5)
+All notable changes to this project will be documented in this file.
+
+## [1.0.0] - 2026-07-20
+
+### Added
+- Complete rewrite of "nexus-core-so" state management core.
+- Introduced `NexusState<T>` with broadcast stream and dynamic dynamic context evaluation hook `NexusBuilderContext`.
+- Introduced `NexusObserver` with full telemetry hooks for states and synchronous/asynchronous actions.
+- Introduced `NexusAction` supporting transaction tracking execution.
+- Added standard `NexusBuilder` Flutter stateful widget with dynamic auto-unsubscription logic.
+- Provided standard development tracking middleware `NexusDevToolsObserver`.
+- Fully written tests asserting state reactivity, listener removal, async updates, and widget lifecycle cleanup.
+- Wrote full-featured Counter mobile app usage example in `example/main.dart`.
